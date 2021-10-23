@@ -19,5 +19,5 @@ php artisan vendor:publish --tag=blade-emblemicons --force
 The new way to reference them is:
 
 ```blade
-<img src="{{ asset('vendor/blade-emblemicons/sigma.svg') }}" width="10" height="10"/>
+<img src="{{ asset('vendor/blade-emblemicons/alert.svg') }}" width="10" height="10"/>
 ```
