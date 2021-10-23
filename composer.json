@@ -1,7 +1,7 @@
 {
     "name": "codeat3/blade-emblemicons",
-    "description": "A package to easily make use of Carbon Icons in your Laravel Blade views.",
-    "keywords": ["Blade", "carbon-icons", "icons", "Laravel"],
+    "description": "A package to easily make use of Emblem Icons in your Laravel Blade views.",
+    "keywords": ["Blade", "emblem", "icons", "Laravel"],
     "homepage": "https://github.com/codeat3/blade-emblemicons",
     "license": "MIT",
     "authors": [
