@@ -17,24 +17,24 @@ final class BladeEmblemiconsServiceProvider extends ServiceProvider
         $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
             $config = $container->make('config')->get('blade-emblemicons', []);
 
-            $factory->add('emblem-icons', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
+            $factory->add('emblem-icons', array_merge(['path' => __DIR__ . '/../resources/svg'], $config));
         });
     }
 
     private function registerConfig(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/blade-emblemicons.php', 'blade-emblemicons');
+        $this->mergeConfigFrom(__DIR__ . '/../config/blade-emblemicons.php', 'blade-emblemicons');
     }
 
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../resources/svg' => public_path('vendor/blade-emblemicons'),
+                __DIR__ . '/../resources/svg' => public_path('vendor/blade-emblemicons'),
             ], 'blade-emblemicons');
 
             $this->publishes([
-                __DIR__.'/../config/blade-emblemicons.php' => $this->app->configPath('blade-emblemicons.php'),
+                __DIR__ . '/../config/blade-emblemicons.php' => $this->app->configPath('blade-emblemicons.php'),
             ], 'blade-emblemicons-config');
         }
     }
