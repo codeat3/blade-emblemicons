@@ -2,7 +2,15 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
-## [Unreleased](https://github.com/codeat3/blade-emblemicons/compare/1.3.0...HEAD)
+## [Unreleased](https://github.com/codeat3/blade-emblemicons/compare/1.3.1...HEAD)
+
+## [1.3.1](https://github.com/codeat3/blade-emblemicons/compare/1.3.0...1.3.1) - 2023-03-10
+
+### What's Changed
+
+- icon updates with correct fill attributes by @swapnilsarwe in https://github.com/codeat3/blade-emblemicons/pull/5
+
+**Full Changelog**: https://github.com/codeat3/blade-emblemicons/compare/1.3.0...1.3.1
 
 ## [1.3.0](https://github.com/codeat3/blade-emblemicons/compare/1.2.0...1.3.0) - 2023-02-18
 
