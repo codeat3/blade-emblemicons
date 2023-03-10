@@ -12,6 +12,7 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
         ->convertStyleToInline()
         ->optimize()
         ->postOptimizationAsString(function ($svgLine) {
+            $svgLine = str_replace('stroke="black"', 'stroke="currentColor"', $svgLine);
             return str_replace('fill="black"', 'fill="currentColor"', $svgLine);
         })
         ->save();
